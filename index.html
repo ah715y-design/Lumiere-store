@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الإكسسوارات والشنط الفاخرة</title>
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Search -->
+    <header class="main-header">
+        <div class="container">
+            <h1 class="store-title">متجر الأناقة والجمال</h1>
+            <p class="store-subtitle">تشكيلة مميزة وفريدة من أحدث الشنط والإكسسوارات العالمية</p>
+            <div class="search-bar-container">
+                <input type="text" id="searchInput" placeholder="ابحث عن شنطة، أنسيال، أو إكسسوار..." onkeyup="filterProducts()">
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Filter -->
+    <section class="filter-section">
+        <div class="container">
+            <button class="filter-btn active" onclick="filterCategory('all')">الكل</button>
+            <button class="filter-btn" onclick="filterCategory('bags')">حقائب وشنط</button>
+            <button class="filter-btn" onclick="filterCategory('jewelry')">إكسسوارات ومجوهرات</button>
+            <button class="filter-btn" onclick="filterCategory('watches')">ساعات أنيقة</button>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <main class="container">
+        <div class="products-grid" id="productsGrid">
+            
+            <!-- كارت منتج 1 -->
+            <div class="product-card" data-category="bags">
+                <div class="badge">الأكثر مبيعاً</div>
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80" alt="شنطة يد" class="product-img">
+                <div class="product-info">
+                    <span class="product-category">حقائب وشنط</span>
+                    <h3 class="product-title">شنطة يد جلدية فاخرة بتصميم أنيق</h3>
+                    <div class="price-container">
+                        <span class="product-price">$24.99</span>
+                        <span class="old-price">$39.99</span>
+                    </div>
+                    <a href="رابط_الأفلييت_بتاعك_هنا" target="_blank" class="btn-buy">شراء الآن عبر AliExpress</a>
+                </div>
+            </div>
+
+            <!-- كارت منتج 2 -->
+            <div class="product-card" data-category="jewelry">
+                <div class="badge new">جديد</div>
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80" alt="طقم مجوهرات" class="product-img">
+                <div class="product-info">
+                    <span class="product-category">إكسسوارات ومجوهرات</span>
+                    <h3 class="product-title">طقم عقد وسوار مطلي بالذهب عيار 18</h3>
+                    <div class="price-container">
+                        <span class="product-price">$12.50</span>
+                        <span class="old-price">$19.99</span>
+                    </div>
+                    <a href="رابط_الأفلييت_بتاعك_هنا" target="_blank" class="btn-buy">شراء الآن عبر AliExpress</a>
+                </div>
+            </div>
+
+            <!-- كارت منتج 3 -->
+            <div class="product-card" data-category="bags">
+                <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80" alt="شنطة كروس" class="product-img">
+                <div class="product-info">
+                    <span class="product-category">حقائب وشنط</span>
+                    <h3 class="product-title">شنطة كروس مودرن متعددة الألوان</h3>
+                    <div class="price-container">
+                        <span class="product-price">$18.20</span>
+                        <span class="old-price">$25.00</span>
+                    </div>
+                    <a href="رابط_الأفلييت_بتاعك_هنا" target="_blank" class="btn-buy">شراء الآن عبر AliExpress</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p class="footer-text">جميع الحقوق محفوظة &copy; 2026 - متجر الأناقة والجمال</p>
+        </div>
+    </footer>
+
+    <!-- JS File Link -->
+    <script src="script.js"></script>
+</body>
+</html>
+
