@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumiere-store</title>
+    <meta
+      name="description"
+      content="متجر أنيقة ومميز للشنط والإكسسوارات والساعات الفاخرة مع تصفح سهل وبحث سريع."
+    />
+    <link rel="stylesheet" href="style 1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="topbar">
+        <div class="container topbar-inner">
+          <div class="brand-mini">
+            <span class="stand-band" aria-label="علامة المتجر">L</span>
+            Lumiere-store
+          </div>
+          <nav class="main-nav" aria-label="التنقل الرئيسي">
+            <a href="#collections">المجموعات</a>
+            <a href="#products">المنتجات</a>
+            <a href="#features">لماذا نحن</a>
+            <a href="#contact">تواصل</a>
+          </nav>
+          <button type="button" class="nav-btn cart-btn" id="cartToggle">
+            <span>سلة التسوق</span>
+            <span id="cartCount" class="cart-badge">0</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container hero">
+        <div class="hero-copy">
+          <span class="eyebrow">مستوى فخم عالمي</span>
+          <h1>شنط، مجوهرات، وساعات تعكس ذوقك.</h1>
+          <p>
+            اكتشف تشكيلة مختارة بعناية من القطع الأنيقة التي تجمع بين
+            الفخامة، الجودة، والتصميم المعاصر.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#products" class="primary-btn">تسوق الآن</a>
+            <a href="#collections" class="secondary-btn">استعرض المجموعات</a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong>+10k</strong>
+              <span>عميل راضٍ</span>
+            </div>
+            <div>
+              <strong>4.9/5</strong>
+              <span>تقييمات</span>
+            </div>
+            <div>
+              <strong>48h</strong>
+              <span>توصيل سريع</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="عرض المنتجات المميزة">
+          <div class="hero-card feature-card large-card">
+            <img
+              src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=80"
+              alt="شنطة فاخرة"
+            />
+            <div class="floating-tag">أفضل المبيعات</div>
+          </div>
+          <div class="mini-cards">
+            <div class="hero-card mini-card gold-card">
+              <span>خصم 30%</span>
+              <strong>الأسبوع الفاخر</strong>
+            </div>
+            <div class="hero-card mini-card">
+              <img
+                src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=700&q=80"
+                alt="سوار فاخر"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="trust-bar">
+        <div class="container trust-inner">
+          <div>شحن سريع</div>
+          <div>توصيل عالمي</div>
+          <div>ضمان جودة</div>
+          <div>الدفع الآمن</div>
+        </div>
+      </section>
+
+      <section class="collections" id="collections">
+        <div class="container section-head">
+          <div>
+            <span class="section-kicker">تسوق حسب ذوقك</span>
+            <h2>مجموعات مختارة بعناية</h2>
+          </div>
+        </div>
+
+        <div class="container collection-grid">
+          <article class="collection-item collection-dark">
+            <div>
+              <span>الاستايل الكلاسيكي</span>
+              <h3>حقائب أنيقة</h3>
+            </div>
+            <button>استكشف الآن</button>
+          </article>
+
+          <article class="collection-item collection-gold">
+            <div>
+              <span>لمسات فاخره</span>
+              <h3>إكسسوارات</h3>
+            </div>
+            <button>تسوق الآن</button>
+          </article>
+
+          <article class="collection-item collection-light">
+            <div>
+              <span>توقيت مميز</span>
+              <h3>ساعات فاخرة</h3>
+            </div>
+            <button>اكتشفها</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="catalog" id="products">
+        <div class="container catalog-top">
+          <div class="section-head">
+            <div>
+              <span class="section-kicker">منتجاتنا المميزة</span>
+              <h2>اكتشف أحدث الإضافات</h2>
+            </div>
+          </div>
+
+          <div class="catalog-controls">
+            <div class="search-wrap">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="ابحث عن منتج أو فئة..."
+                aria-label="بحث المنتجات"
+              />
+            </div>
+
+            <div class="filter-group" aria-label="تصنيف المنتجات">
+              <button class="filter-btn active" data-category="all">الكل</button>
+              <button class="filter-btn" data-category="bags">حقائب</button>
+              <button class="filter-btn" data-category="jewelry">إكسسوارات</button>
+              <button class="filter-btn" data-category="watches">ساعات</button>
+            </div>
+            <p id="resultCount" class="result-count">عرض 6 منتجات</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="products-grid" id="productsGrid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="container section-head">
+          <div>
+            <span class="section-kicker">لماذا نحن؟</span>
+            <h2>تجربة شراء فاخرة وخدمة متكاملة</h2>
+          </div>
+        </div>
+
+        <div class="container feature-grid">
+          <article class="feature-item">
+            <div class="feature-icon">✦</div>
+            <h3>منتجات مختارة بعناية</h3>
+            <p>نختار لك أحدث التصاميم العالمية من ماركات موثوقة.</p>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-icon">⏱</div>
+            <h3>توصيل سريع</h3>
+            <p>تجهيز سريع وتوصيل موثوق في معظم المدن والمناطق.</p>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-icon">🔒</div>
+            <h3>شراء آمن</h3>
+            <p>الدفع الآمن وحماية كاملة لبياناتك أثناء الشراء.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter" id="contact">
+        <div class="container newsletter-box">
+          <div>
+            <span class="section-kicker">انضم إلى العائلة</span>
+            <h2>احصل على عروضنا الحصرية أولاً</h2>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="أدخل بريدك الإلكتروني" aria-label="البريد الإلكتروني" />
+            <button type="submit">اشترك الآن</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container footer-inner">
+        <div>
+          <h3>Lumiere-store</h3>
+          <p>متجر فخم لأسلوبك اليومي والاحتفالي.</p>
+        </div>
+        <div>
+          <p>© 2026 جميع الحقوق محفوظة</p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" aria-live="polite"></div>
+
+    <div id="cartOverlay" class="cart-overlay" aria-hidden="true"></div>
+
+    <aside id="cartDrawer" class="cart-drawer" aria-label="سلة التسوق">
+      <div class="cart-header">
+        <h3>سلة التسوق</h3>
+        <button type="button" id="closeCart" class="close-cart" aria-label="إغلاق السلة">×</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span>الإجمالي</span>
+          <strong id="cartTotal">$0.00</strong>
+        </div>
+        <button type="button" class="checkout-btn">إتمام الطلب</button>
+      </div>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
