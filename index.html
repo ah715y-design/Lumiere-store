@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumiere-store</title>
+    <meta
+      name="description"
+      content="متجر أنيقة ومميز للشنط والإكسسوارات والساعات الفاخرة مع تصفح سهل وبحث سريع."
+    />
+    <link rel="icon" type="image/png" href="1.jpeg"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="topbar">
+        <div class="container topbar-inner">
+          <div class="brand-mini">
+            <span class="stand-band" aria-label="علامة المتجر">✦</span>
+            Lumiere-store
+          </div>
+          <nav class="main-nav" aria-label="التنقل الرئيسي">
+            <a href="#products">المنتجات</a>
+            <a href="#features">لماذا نحن</a>
+            <a href="#contact">تواصل</a>
+          </nav>
+          <button type="button" class="theme-toggle" id="themeToggle" aria-label="تفعيل الوضع المعتم" aria-pressed="false">
+            <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            <span>الوضع المعتم</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container hero">
+        <div class="hero-copy">
+          <span class="eyebrow">مستوى فخم عالمي</span>
+          <h1>شنط، مجوهرات، وساعات تعكس ذوقك.</h1>
+          <p>
+            اكتشف تشكيلة مختارة بعناية من القطع الأنيقة التي تجمع بين
+            الفخامة، الجودة، والتصميم المعاصر.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#products" class="primary-btn">تسوق الآن</a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong>+5k</strong>
+              <span>عميل راضٍ</span>
+            </div>
+            <div>
+              <strong>4.8/5</strong>
+              <span>تقييمات</span>
+            </div>
+            <div>
+              <strong>48h</strong>
+              <span>توصيل سريع</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="عرض المنتجات المميزة">
+          <div class="hero-card feature-card large-card">
+            <img
+              src="all%20products/%D9%85%D9%86%D8%AA%D8%AC%205/http___img.ltwebstatic.com_v4_j_dps_PS2026082117430_13e0f60567b085148d1ce615638efb6b2d4c44b90ff827921d192991382270f4.jpg"
+              alt="طقم ملابس رياضي بنقشة الفهد"
+            />
+            <div class="floating-tag">اختيارات Lumiere</div>
+          </div>
+          <div class="mini-cards">
+            <div class="hero-card mini-card gold-card">
+              <span>خصم 30%</span>
+              <strong>الأسبوع الفاخر</strong>
+            </div>
+            <div class="hero-card mini-card">
+              <img
+                src="all%20products/%D9%85%D9%86%D8%AA%D8%AC%203/http___img.ltwebstatic.com_v4_j_spmp_2025_11_27_1c_1764235200c7718e7fb4518cca1fc827e18005676e.jpg"
+                alt="رموش صناعية ذاتية اللصق"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="trust-bar">
+        <div class="container trust-inner">
+          <div>شحن سريع</div>
+          <div>توصيل عالمي</div>
+          <div>ضمان جودة</div>
+          <div>الدفع الآمن</div>
+        </div>
+      </section>
+
+      <section class="catalog" id="products">
+        <div class="container catalog-top">
+          <div class="section-head">
+            <div>
+              <span class="section-kicker">منتجاتنا المميزة</span>
+              <h2>اكتشف أحدث الإضافات</h2>
+            </div>
+          </div>
+
+          <div class="catalog-controls">
+            <div class="search-wrap">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="ابحث عن منتج أو فئة..."
+                aria-label="بحث المنتجات"
+              />
+            </div>
+
+            <div class="filter-group" aria-label="تصنيف المنتجات">
+              <button class="filter-btn active" data-category="all">الكل</button>
+              <button class="filter-btn" data-category="bags">حقائب</button>
+              <button class="filter-btn" data-category="jewelry">إكسسوارات</button>
+              <button class="filter-btn" data-category="watches">ساعات</button>
+              <button class="filter-btn" data-category="home">منزل وأطفال</button>
+              <button class="filter-btn" data-category="clothing">ملابس</button>
+              <button class="filter-btn" data-category="beauty">عناية وجمال</button>
+              <button class="filter-btn" data-category="electronics">إلكترونيات</button>
+              <button class="filter-btn" data-category="tools">أدوات</button>
+            </div>
+            <p id="resultCount" class="result-count">عرض 6 منتجات</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="products-grid" id="productsGrid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="container section-head">
+          <div>
+            <span class="section-kicker">لماذا نحن؟</span>
+            <h2>تجربة شراء فاخرة وخدمة متكاملة</h2>
+          </div>
+        </div>
+
+        <div class="container feature-grid">
+          <article class="feature-item">
+            <div class="feature-icon">✦</div>
+            <h3>منتجات مختارة بعناية</h3>
+            <p>نختار لك أحدث التصاميم العالمية من ماركات موثوقة.</p>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-icon">⏱</div>
+            <h3>توصيل سريع</h3>
+            <p>تجهيز سريع وتوصيل موثوق في معظم المدن والمناطق.</p>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-icon">🔒</div>
+            <h3>شراء آمن</h3>
+            <p>الدفع الآمن وحماية كاملة لبياناتك أثناء الشراء.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter" id="contact">
+        <div class="container newsletter-box">
+          <div>
+            <span class="section-kicker">انضم إلى العائلة</span>
+            <h2>احصل على عروضنا الحصرية أولاً</h2>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="أدخل بريدك الإلكتروني" aria-label="البريد الإلكتروني" />
+            <button type="submit">اشترك الآن</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container footer-inner">
+        <div>
+          <h3>Lumiere-store</h3>
+          <p>متجر فخم لأسلوبك اليومي والاحتفالي.</p>
+        </div>
+        <nav class="social-links" aria-label="روابط التواصل الاجتماعي">
+          <a href="https://www.facebook.com/share/1ExR3bk11v/" target="_blank" rel="noreferrer" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="https://www.instagram.com/lumiere_store.official?stkn=c2J4c29uMGc3Nng=" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="https://wa.me/201207665403" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span>WhatsApp</span>
+          </a>
+          <a href="https://www.threads.com/@lumiere_store.official" target="_blank" rel="noreferrer" aria-label="Threads">
+            <i class="fa-brands fa-threads" aria-hidden="true"></i>
+            <span>Threads</span>
+          </a>
+        </nav>
+        <div>
+          <p>© 2026 جميع الحقوق محفوظة</p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
